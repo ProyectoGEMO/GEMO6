@@ -1,0 +1,81 @@
+body {
+    background-color: rebeccapurple;
+    font-family: Lexend;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    overflow: hidden;
+}
+#unity-container { position: absolute }
+#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
+#unity-container.unity-mobile { width: 100%; height: 100% }
+#unity-canvas { background: #231F20 }
+.unity-mobile #unity-canvas { width: 100%; height: 100% }
+#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
+#unity-logo { width: 154px; height: 130px; background: url('unity-logo-light.png') no-repeat center }
+#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-light.png') no-repeat center }
+#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-light.png') no-repeat center }
+#unity-footer { position: relative }
+.unity-mobile #unity-footer { display: none }
+#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+#unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
+#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+
+/* CUSTOM */
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('fonts/Lexend/Lexend-VariableFont_wght.ttf');
+}
+
+.customBox {
+    padding: 2vw;
+    text-align: center;
+    border-radius: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    background-color: mediumpurple;
+    gap: 1vh;
+}
+
+.customBox img{
+    width: 20vw;
+    height: 20vw;
+    object-fit: contain;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.textBox{
+    text-align: center;
+    width: 90vw;
+}
+
+#startARButton{
+    background-color: rebeccapurple;
+    width: 90vw;
+    height: 5vh;
+    color: white;
+    font-weight: bold;
+    border-radius: 5vw;
+}
+
+#chooseCamSel {
+    background-color: rebeccapurple;
+    width: 90vw;
+    height: 5vh;
+    color: white;
+    font-weight: bold;
+    border-radius: 5vw;
+}
